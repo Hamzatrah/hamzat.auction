@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Mobile-Friendly Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 2% 5%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Image -->
+        <img src="path_to_image.jpg" alt="Description of Image">
+
+        <!-- Text Field for Description -->
+        <textarea rows="4" cols="50" placeholder="Enter description here..." style="width: 100%;"></textarea>
+
+        <!-- Feature to collect email addresses -->
+        <form action="/submit_email" method="post">
+            <label for="email">Enter your Email:</label><br>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px;"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
