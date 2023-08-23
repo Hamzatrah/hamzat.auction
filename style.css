@@ -1,16 +1,16 @@
 .typing-effect {
-    font-family: 'Times'
-    font-size: 12px;
+    font-family: 'Times',
+    font-size: 20px;
 }
 
 .cursor {
     display: inline-block;
     width: 2px;
-    height: 24px;
+    height: 20px;
     background-color: black;
     vertical-align: middle;
     margin-left: 2px;
-    animation: blink 1s infinite;
+    animation: blink 2s infinite;
 }
 
 @keyframes blink {
@@ -21,6 +21,6 @@
         opacity: 0;
     }
     100% {
-        opacity: 1;
+        opacity: .75;
     }
 }
